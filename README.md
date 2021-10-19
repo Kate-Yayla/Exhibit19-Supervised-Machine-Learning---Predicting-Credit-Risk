@@ -31,7 +31,7 @@ I created and compared two models on this data: a logistic regression, and a ran
 
 ## Fit a LogisticRegression model and RandomForestClassifier model
 
-Created a LogisticRegression model, fit it to the data, and printed the model's score, did the same for a RandomForestClassifier. 
+Created a LogisticRegression model, fit it to the data, and printed the model's score, did the same for a RandomForestClassifier. I added missiig column "debt_settlement_flag_Y" , so score can be seen as below for both scaled and unscaled data by using LR and RFC models. 
 
 ![Unscaled data ](images/Unscaleddata.png)
 
@@ -44,3 +44,14 @@ Used `StandardScaler` to scale the training and testing sets.
 
 
 Fit and score the LogisticRegression and RandomForestClassifier models on the scaled data. 
+
+## Drop the column "debt_settlement_flag_Y" from training data which was not in the testing data
+
+I also run the models dropping the missing columns from training data, the scores look very similar for both LR and RFC models for both unscaled and scaled data. So there is no impact of column "debt_settlement_flag_Y" to our data. You can see result of score as above in the code.
+
+![Unscaled data ](images/LRUSD.png)
+![Unscaled data ](images/RFCUSD.png)
+![scaled data ](images/LRSD.png)
+![scaled data ](images/RFCSD.png)
+
+As a result, I would go Logistic Regression with scaled data model for prediction as it seems more accurate for both training and testing data.   With the scaled data, there is %15 increase of testing data score which makes our data more closer to the max.
