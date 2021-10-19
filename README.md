@@ -33,7 +33,7 @@ I created and compared two models on this data: a logistic regression, and a ran
 
 Created a LogisticRegression model, fit it to the data, and printed the model's score, did the same for a RandomForestClassifier. 
 
-![Unscaled data ](images/unscaleddata.png)
+![Unscaled data ](images/Unscaleddata.png)
 
 
 ## Revisit the Preprocessing: Scale the data
